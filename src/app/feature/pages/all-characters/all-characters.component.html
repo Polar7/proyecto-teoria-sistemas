@@ -1,0 +1,16 @@
+@for (characterActual of arrayAllCharacters; track characterActual.id) {
+  <div class="card" style="width: 18rem;">
+    <img src="{{characterActual.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{characterActual.name}}</h5>
+      <p class="card-text">Pertenece a la casa: {{characterActual.house}}</p>
+      @if (characterActual.alive) {
+        <button type="button" class="btn btn-success">Vivo</button>
+      } @else {
+        <button type="button" class="btn btn-danger">Muerto</button>
+      }
+    </div>
+  </div>
+}
+
+
