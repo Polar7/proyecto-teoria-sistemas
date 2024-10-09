@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
+import {CharacterDto} from "../dto/character-dto";
 
 @Injectable({
   providedIn: 'root'
@@ -16,9 +17,12 @@ export class ApiHarrypotterService {
   /**
    * Ejecuta el llamado a la api para obtener todos los personajes
    */
-  public getAllCharacters(): Observable<Array<any>> {
-    return this.http.get<Array<any>>(this.url + "/characters");
+  public getAllCharacters(): Observable<Array<CharacterDto>> {
+    return this.http.get<Array<CharacterDto>>(this.url + "/characters");
   }
 
+  public getCharacterById(id: string): Observable<Array<CharacterDto>> {
+    return this.http.get<Array<CharacterDto>>(`${this.url}/character/${id}`);
+  }
 
 }

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NewsComponent } from './feature/example/news/news.component';
 import { AllCharactersComponent } from './feature/pages/all-characters/all-characters.component';
 import {HttpClientModule} from "@angular/common/http";
+import { SpecificCharacterComponent } from './feature/pages/specific-character/specific-character.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsComponent,
-    AllCharactersComponent
+    AllCharactersComponent,
+    SpecificCharacterComponent
   ],
   imports: [
     BrowserModule,
