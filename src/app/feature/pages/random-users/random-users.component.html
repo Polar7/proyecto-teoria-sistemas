@@ -1,0 +1,21 @@
+<div class="card-container">
+  @for (characterActual of arrayAllUserRandom; track characterActual.cell) {
+    <div class="card" style="width: 18rem;">
+      <img src="{{characterActual.picture.large}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{characterActual.name.title}} {{characterActual.name.first}} {{characterActual.name.last}}</h5>
+        <p class="card-text">Direccion: {{characterActual.location.street.number}} {{characterActual.location.street.name}}</p>
+        <p class="card-text">Ciudad: {{characterActual.location.city}}, Postcode: {{characterActual.location.postcode}}</p>
+        <p class="card-text">Pais: {{characterActual.location.country}}</p>
+        <p class="card-text">Email: {{characterActual.email}}</p>
+        <p class="card-text">Celular: {{characterActual.cell}}</p>
+        <p class="card-text">Edad: {{characterActual.dob.age}}, año de nacimiento: {{characterActual.dob.date}}</p>
+        @if (characterActual.gender == "female") {
+          <button type="button" class="btn btn-info">Mujer</button>
+        } @else {
+          <button type="button" class="btn btn-danger">Hombre</button>
+        }
+      </div>
+    </div>
+  }
+</div>

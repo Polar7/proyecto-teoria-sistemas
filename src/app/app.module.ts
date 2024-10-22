@@ -7,13 +7,15 @@ import { NewsComponent } from './feature/example/news/news.component';
 import { AllCharactersComponent } from './feature/pages/all-characters/all-characters.component';
 import {HttpClientModule} from "@angular/common/http";
 import { SpecificCharacterComponent } from './feature/pages/specific-character/specific-character.component';
+import { RandomUsersComponent } from './feature/pages/random-users/random-users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsComponent,
     AllCharactersComponent,
-    SpecificCharacterComponent
+    SpecificCharacterComponent,
+    RandomUsersComponent
   ],
   imports: [
     BrowserModule,
