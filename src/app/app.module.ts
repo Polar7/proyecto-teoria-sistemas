@@ -8,6 +8,7 @@ import { AllCharactersComponent } from './feature/pages/all-characters/all-chara
 import {HttpClientModule} from "@angular/common/http";
 import { SpecificCharacterComponent } from './feature/pages/specific-character/specific-character.component';
 import { RandomUsersComponent } from './feature/pages/random-users/random-users.component';
+import { SimpsonAllCharacterComponent } from './feature/pages/simpson-all-character/simpson-all-character.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RandomUsersComponent } from './feature/pages/random-users/random-users.
     NewsComponent,
     AllCharactersComponent,
     SpecificCharacterComponent,
-    RandomUsersComponent
+    RandomUsersComponent,
+    SimpsonAllCharacterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<div class="card-container">
+  @for (characterActual of arrayAllCharacters; track characterActual._id) {
+    <div class="card" style="width: 18rem;">
+      <img src="{{characterActual.Imagen}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{characterActual.Nombre}}</h5>
+        <p class="card-text">Historia: {{characterActual.Historia}}</p>
+        <p class="card-text">Trabaja como: {{characterActual.Ocupacion}}</p>
+        @if (characterActual.Genero == "Femenino") {
+          <button type="button" class="btn btn-dark">Femenino</button>
+        } @else {
+          <button type="button" class="btn btn-warning">Masculino</button>
+        }
+      </div>
+    </div>
+  }
+</div>
