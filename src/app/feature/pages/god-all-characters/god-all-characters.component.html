@@ -1,0 +1,19 @@
+<div class="card-container">
+  @for (characterActual of arrayAllCharacters; track characterActual.imageUrl) {
+    <div class="card" style="width: 18rem;">
+      <img src="{{characterActual.imageUrl}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{characterActual.fullName}}</h5>
+        <p class="card-text">Pertenece a la familia: {{characterActual.family}}</p>
+        @if (characterActual.family == "House Stark") {
+          <button type="button" class="btn btn-success">Casa Stark</button>
+        } @else if (characterActual.family == "House Baratheon") {
+          <button type="button" class="btn btn-danger">Casa Baratheon</button>
+        } @else if (characterActual.family == "House Targaryen") {
+          <button type="button" class="btn btn-warning">Casa Targaryen</button>
+        }
+      </div>
+    </div>
+  }
+</div>
+

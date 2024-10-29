@@ -11,7 +11,7 @@ export class ApiRandomUserService {
   private readonly url: string;
 
   constructor(private http: HttpClient) {
-    this.url = "https://randomuser.me/api/?results=12"
+    this.url = "https://randomuser.me/api/?results=20"
   }
 
   public getAllRandomUsers(): Observable<ResultApi> {

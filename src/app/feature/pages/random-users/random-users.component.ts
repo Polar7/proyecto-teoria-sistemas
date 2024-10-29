@@ -15,7 +15,7 @@ export class RandomUsersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.apiRandom.getAllRandomUsers().subscribe(res => this.arrayAllUserRandom = res.results);
+    this.apiRandom.getAllRandomUsers().subscribe(respuesta => this.arrayAllUserRandom = respuesta.results);
   }
 
 

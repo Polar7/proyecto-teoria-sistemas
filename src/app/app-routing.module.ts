@@ -5,6 +5,7 @@ import {AllCharactersComponent} from "./feature/pages/all-characters/all-charact
 import {SpecificCharacterComponent} from "./feature/pages/specific-character/specific-character.component";
 import {RandomUsersComponent} from "./feature/pages/random-users/random-users.component";
 import {SimpsonAllCharacterComponent} from "./feature/pages/simpson-all-character/simpson-all-character.component";
+import {GodAllCharactersComponent} from "./feature/pages/god-all-characters/god-all-characters.component";
 
 const routes: Routes = [
   {
@@ -24,9 +25,13 @@ const routes: Routes = [
     component: RandomUsersComponent
   },
   {
+    path: 'api-god',
+    component: GodAllCharactersComponent
+  },
+  {
     path: 'todos-simpsons',
     component: SimpsonAllCharacterComponent
-  },
+  }
 ];
 
 @NgModule({
