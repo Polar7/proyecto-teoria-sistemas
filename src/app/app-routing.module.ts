@@ -6,6 +6,7 @@ import {SpecificCharacterComponent} from "./feature/pages/specific-character/spe
 import {RandomUsersComponent} from "./feature/pages/random-users/random-users.component";
 import {SimpsonAllCharacterComponent} from "./feature/pages/simpson-all-character/simpson-all-character.component";
 import {GodAllCharactersComponent} from "./feature/pages/god-all-characters/god-all-characters.component";
+import {RegisterFormComponent} from "./feature/auth/register-form/register-form.component";
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'todos-simpsons',
     component: SimpsonAllCharacterComponent
+  },
+  {
+    path: 'registro-usuario',
+    component: RegisterFormComponent
   }
 ];
 

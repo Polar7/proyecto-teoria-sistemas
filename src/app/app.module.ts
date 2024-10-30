@@ -10,6 +10,8 @@ import { SpecificCharacterComponent } from './feature/pages/specific-character/s
 import { RandomUsersComponent } from './feature/pages/random-users/random-users.component';
 import { GodAllCharactersComponent } from './feature/pages/god-all-characters/god-all-characters.component';
 import { SimpsonAllCharacterComponent } from './feature/pages/simpson-all-character/simpson-all-character.component';
+import { RegisterFormComponent } from './feature/auth/register-form/register-form.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { SimpsonAllCharacterComponent } from './feature/pages/simpson-all-charac
     SpecificCharacterComponent,
     RandomUsersComponent,
     SimpsonAllCharacterComponent,
-    GodAllCharactersComponent
+    GodAllCharactersComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
