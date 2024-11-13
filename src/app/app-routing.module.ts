@@ -7,6 +7,7 @@ import {RandomUsersComponent} from "./feature/pages/random-users/random-users.co
 import {SimpsonAllCharacterComponent} from "./feature/pages/simpson-all-character/simpson-all-character.component";
 import {GodAllCharactersComponent} from "./feature/pages/god-all-characters/god-all-characters.component";
 import {RegisterFormComponent} from "./feature/auth/register-form/register-form.component";
+import {CinemaFormComponent} from "./feature/cinemark/cinema-form/cinema-form.component";
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'registro-usuario',
     component: RegisterFormComponent
+  },
+  {
+    path: 'formulario-cinemark',
+    component: CinemaFormComponent
   }
 ];
 

@@ -12,6 +12,9 @@ import { GodAllCharactersComponent } from './feature/pages/god-all-characters/go
 import { SimpsonAllCharacterComponent } from './feature/pages/simpson-all-character/simpson-all-character.component';
 import { RegisterFormComponent } from './feature/auth/register-form/register-form.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { PaymentFormComponent } from './feature/cinemark/payment-form/payment-form.component';
+import { BasicDataFormComponent } from './feature/cinemark/basic-data-form/basic-data-form.component';
+import { CinemaFormComponent } from './feature/cinemark/cinema-form/cinema-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import {ReactiveFormsModule} from "@angular/forms";
     RandomUsersComponent,
     SimpsonAllCharacterComponent,
     GodAllCharactersComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    PaymentFormComponent,
+    BasicDataFormComponent,
+    CinemaFormComponent
   ],
   imports: [
     BrowserModule,

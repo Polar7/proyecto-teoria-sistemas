@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {AppBaseComponent} from "../../../core/util/AppBaseComponent";
 import {ErrorsForm} from "../../../core/util/ErrorsForm";
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-register-form',
@@ -31,7 +32,11 @@ export class RegisterFormComponent extends AppBaseComponent {
     //this.registerForm.controls['firstName'].setValue(this.registerForm.controls['firstName'].value);
     if (!this.registerForm.valid) {
       this.registerForm.markAllAsTouched();
-      alert("Hay errores en el formulario")
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Tienes errores en el formulario, revisa por favor!",
+      });
     }
 
     console.log(this.getAllErrorsForm(this.registerForm));
